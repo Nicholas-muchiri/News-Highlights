@@ -1,50 +1,31 @@
 # News Highlights
+### An application that shows news in different categories , June 19th, 2018.
+#### By **[Ephantus karanja](https://github.com/ephantuskaranja)**
+## Description
+This application is built on flask and News API. The different news categories are displayed in the home page.The app is built to help busy persons all over the world to catch up with the latest news in a short while.
 
-# AUTHOR
+##Prerequisites
+  -python 3.6
 
-#### Kipngetich Ngeno
 
-# PROJECT NAME
+## Cloning Repository
+  - Clone the Repo
+  - Edit the start.sh file with your api key from the news.org website
+  - Install python 3.6
+  - Run chmod a+x start.py
+  - Run ./start.py
+## Known Bugs
+    No bugs so far. If found, email me at ephantusslogan@gmail.com
 
-#### News Highlights
+## Contributions
+    Incase you want to contribute, kindly feel free to clone the repo from here:
+    (https://github.com/ephantuskaranja/News_highlight.git)
 
-# DESCRIPTION
+## Technologies Used
+    1. HTML
+    2. Bootstrap
+    3. Flask framework
+    4. Python v3.6
 
-#### An app that allows the users to views several news sources as well as click on the source of their choice to view highlights
-
-# Specs
-
-#### User Stories
-
-* Users can see various news sources and select the ones they prefer
-* Users can see all the news articles from that news source
-* The user can see the image description and time the news article was created.
-* The user can click on an article and read it fully from the news source.
-
-## Prerequisites
-* Python3.6
-
-# Installation
-
-* The app is easily available on Github
-* Clone this repository and run the run.py fil
-
-# How it works
-
-#### A user simply searches for the site where several sources of news will be displayed the users can then choose to navigate to any news source of their choice, views the headlines and read the full article
-
-# CREDITS
-
-#### Moringa School, StackOverflow.com and W3 schools
-
-# Technologies Used
-
-#### This project uses major technologies which are :
-* HTML5/CSS 
-* Bootstrap 
-* Python3.6
-* flask
-
-# Support and Contacts
-
-#### In case You have any issues using this code please do no hesitate to get in touch with me through khalifngeno@gmail.com or leave a commit here on github.
+## Support and contact details
+Contact me on ephantusslogan@gmail.com for any comments, reviews or advice.
