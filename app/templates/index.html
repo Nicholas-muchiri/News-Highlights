@@ -1,20 +1,28 @@
-{% extends 'base.html' %}
-{% import 'macros.html' as macro %}
+{% extends 'base.html' %} {% import 'macros.html' as macro %} {% block content %}
+<div class="row">
+  <div class="col-md-12">
 
-{% block styles%}
-{{ super() }}
-<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-<link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet">
-{% endblock %}
+    <h1>Tech News</h1>
+    <ul>
+      {{macro.displaySourcesList(technology)}}
 
-{% block content %}
-<div class="container" style="border:solid 3px gainsboro">
-  <h1>News Channels</h1>
-  <!-- <h4 style="color:red;">Hello</h4> -->
-  <hr>
-      <ul>
-        {{macro.macro_highlights(sources_and_name)}}
-      </ul>
+    </ul>
+  </div>
 </div>
-{% endblock%}
-
+<div class="row">
+  <div class="col-md-12">
+    <h1>Sports News</h1>
+    <ul>
+      {{macro.displaySourcesList(sports)}}
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h1>Entertainment News</h1>
+    <ul>
+      {{macro.displaySourcesList(entertainment)}}
+    </ul>
+  </div>
+</div>
+{% endblock %}
