@@ -1,58 +1,13 @@
-{% macro macro_highlights(sources_and_name)%}
+{% macro displaySourcesList(sources_list) %}
+    {% for sources in sources_list  %}
+  
+            <div class="col-md-3">
+                <a href="/source/{{sources.id}}">{{ sources.name }}</a>
+                <p>
+                    {{sources.description |truncate(150)}}
+                </p>
+            </div>
 
-    {% for source in sources_and_name %}
-    <div class="col-md-6">
-        <hr>
-        <li>
-            <h3>{{ source.source_name}}</h3>
-            <a href='/news_page/{{source.source_id}}'>
-                {{ source.source_id }}   
-            </a>
-            <!-- <h4>{{ source.source_id}}</h4>
-            <h4>{{ source.source_url}}</h4> -->
-            <p>{{source.source_description}}</p> 
-        </li>
-    </div>
-   
     {% endfor %}
-
-{% endmacro %}
-
-<!-- this is the second part -->
-<!-- {% macro macro_highlights1(sources_and_name)%}
-
-    {% for source in sources_and_name %}
-    <hr>
-    <li>
-        <h3>{{ source.source_name}}<h3>
-        <a href='/news_page/{{source.source_id}}'>
-            {{ source.source_id }}   
-        </a>
-        <h4>{{ source.source_id}}</h4>
-        <h4>{{ source.source_url}}</h4>
-        <p>{{source.source_description}}</p> 
-    </li>
-    {% endfor %}
-
-{% endmacro %} -->
-
-<!-- this part covers the articles section -->
-
-{% macro display_articles_from_source(source_and_articles) %}
-    {% for article in source_and_articles %}
-    <hr>
-    <li>
-        <h3 id="article_title">{{article.article_title}}</h3>
-        <h4><span style="color:blue;">Time:&nbsp;</span>{{ article.article_time}}</h4>
-
-        <a href="{{article.article_image}}">
-            <h3>Read More</h3>
-        </a>
-        <a href="{{article.article_image}}">
-            <img src="{{article.article_url}}">
-        </a>
-        
-    </li>
-    {% endfor %} 
 {% endmacro %}
 
