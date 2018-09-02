@@ -2,26 +2,38 @@ import os
 
 class Config:
     '''
-    main configuration class
+    General configuration parent class
     '''
+    NEWS_API_BASE_URL = 'https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
+    BASE_URL = 'https://newsapi.org/v2/everything?language=en&sources={}&apiKey={}'
+    NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
 
-    NEWS_API_KEY = '44b40f34d60a4884aff4338f6e05a4d3'
-    NEWS_API_BASE_URL = 'https://newsapi.org/v1/sources'
+
 
 class ProdConfig(Config):
     '''
-    Production configuration class that inherits from the main configurations class
+    Production  configuration child class
+
+    Args:
+        Config: The parent configuration class with General configuration settings
     '''
     pass
 
 
 class DevConfig(Config):
     '''
-    Configuration class for development stage of the app
+    Development  configuration child class
+
+    Args:
+        Config: The parent configuration class with General configuration settings
     '''
+
     DEBUG = True
 
+
+
 config_options = {
-    'development': DevConfig,
-    'production': ProdConfig
+'development':DevConfig,
+'production':ProdConfig
+
 }
