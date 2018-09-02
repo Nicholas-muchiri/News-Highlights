@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container" style="border:solid 3px gainsboro">
+  <h1>News Channels</h1>
+  <!-- <h4 style="color:red;">Hello</h4> -->
+  <hr>
+      <ul>
+        {{macro.macro_highlights(sources_and_name)}}
+      </ul>
+</div>
+{% endblock%}
+
