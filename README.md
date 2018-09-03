@@ -1,12 +1,12 @@
 # News Highlights
 ### This is an application that will help people who are always passed by news to list and preview news articles from various sources.
-#### By **[Ephantus karanja](https://github.com/ephantuskaranja)**
+
+#### By **[Nicholas Muchiri]Nickromero187@gmail.com
 ## Description
 This application is built on flask and News API. The different news categories are displayed in the home page.The app is built to help busy persons all over the world to catch up with the latest news in a short while.
 
 ##Prerequisites
   -python 3.6
-
 
 ## Cloning Repository
   - Clone the Repo
@@ -15,7 +15,7 @@ This application is built on flask and News API. The different news categories a
   - Run chmod a+x start.py
   - Run ./start.py
 ## Known Bugs
-    No bugs so far. If found, email me at Nickromero1872gmail.com.
+    No bugs so far. If found, email me at Nickromero187@gmail.com.
 
 ## Contributions
     Incase you want to contribute, kindly feel free to clone the repo from here:
@@ -28,4 +28,4 @@ This application is built on flask and News API. The different news categories a
     4. Python v3.6
 
 ## Support and contact details
-Contact me on ephantusslogan@gmail.com for any comments, reviews or advice.
+Contact me on Nickromero187@gmail.com for any comments, reviews or advice.
