@@ -42,21 +42,6 @@ def get_sources(category):
     return sources_results
 
 
-
-
-#
-def get_article(id):
-    get_article_url = article_url.format(id, api_key)
-
-    with urllib.request.urlopen(get_article_url) as url:
-        article_results = json.loads(url.read())
-        article_object = None
-        # print(article_results)
-        if article_results['articles']:
-            article_object = process_article(article_results['articles'])
-
-    return article_object
-
 def process_results(sources_list):
     """
     Function that processes the sources result and tranforms them to a list of objects
@@ -75,7 +60,20 @@ def process_results(sources_list):
         sources_results.append(sources_object)
 
     return sources_results
-    
+
+
+#
+def get_article(id):
+    get_article_url = article_url.format(id, api_key)
+
+    with urllib.request.urlopen(get_article_url) as url:
+        article_results = json.loads(url.read())
+        article_object = None
+        # print(article_results)
+        if article_results['articles']:
+            article_object = process_article(article_results['articles'])
+
+    return article_object
 
 
 def process_article(article_list):
@@ -90,7 +88,6 @@ def process_article(article_list):
         date = article_item.get('publishedAt')
 
         if image:
-            article_result = Articles(id, image
-                ,author, title, description, url,  date)
+            article_result = Articles(id, author, title, description, url, image, date)
             article_object.append(article_result)
     return article_object
