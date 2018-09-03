@@ -17,7 +17,7 @@ This application is built on flask and News API. The different news categories a
   - Run chmod a+x start.sh
   - Run ./start.sh
 ## Known Bugs
-    No bugs so far. If found, email me at Nickromero187@gmail.com.
+    No bugs so far. If found, email me at [Nickromero187@gmail.com.]
 
 ## Contributions
     Incase you want to contribute, kindly feel free to clone the repo from here:
