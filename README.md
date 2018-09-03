@@ -27,7 +27,7 @@ This application is built on flask and News API. The different news categories a
     1. HTML
     2. Bootstrap
     3. Flask framework
-    4. Python v3.6
+    4. Python version(3.6)
 
 ## Support and contact details
 Contact me on Nickromero187@gmail.com for any comments, reviews or advice.
