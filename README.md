@@ -1,5 +1,5 @@
 # News Highlights
-### An application that shows news in different categories , June 19th, 2018.
+### This is an application that will help people who are always passed by news to list and preview news articles from various sources.
 #### By **[Ephantus karanja](https://github.com/ephantuskaranja)**
 ## Description
 This application is built on flask and News API. The different news categories are displayed in the home page.The app is built to help busy persons all over the world to catch up with the latest news in a short while.
@@ -15,7 +15,7 @@ This application is built on flask and News API. The different news categories a
   - Run chmod a+x start.py
   - Run ./start.py
 ## Known Bugs
-    No bugs so far. If found, email me at ephantusslogan@gmail.com
+    No bugs so far. If found, email me at Nickromero1872gmail.com.
 
 ## Contributions
     Incase you want to contribute, kindly feel free to clone the repo from here:
