@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
+
+
 {% block content%}
+
+
     {% for article_row in article %}
 
 
+
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
                 <a href="{{article_row.url}}">
                     <img src="{{article_row.image}}" alt="{{article_row.title}}" class="img-responsive" styles="height:30px">
                 </a>
@@ -17,7 +22,9 @@
                     Published at: {{article_row.date}}
                 </div>
 
-    </div>
+        </div>
+       
+    
 
     {% endfor %}
 
